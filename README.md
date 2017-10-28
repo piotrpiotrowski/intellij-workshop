@@ -41,4 +41,24 @@ where:
 ```        
 1. Duplicate first case in `where:` block and change it to `""` - **Ctrl+D**/**Cmd+D**
 1. Delete `given:` block and following blank line - **Ctrl+Y**/**Cmd+Y**
-1. Edit second column in `where:` block - set cursor before first column press **Alt+Alt+3*DOWN**
+1. Edit second column in `where:` block 
+ * set cursor before first column press **Alt+Alt+3xDOWN**
+ * go to end of the line **End**/**Cmd+RIGHT**
+ * select second column - **Alt+UP** and type `caseDescription` and press **Esc**
+ * adjust description in each row
+1. Run tests - go outside of test method and press **Ctrl+Shift+F10**/**Ctrl+Shift+R**
+1. Fix first compilator error by creating order() method:
+ * press **Alt+Enter** on ``order()`` method 
+ * pick option *Create Method*
+1. Go to implementation and copy if block to ``order()`` method- **Ctrl+Shift+T**/**Cmd+Shift+T**
+```java
+  if (clientId == null || clientId == "") {
+            
+  }
+```
+1. Implement throwing `llegalArgumentException`: 
+ * start typing `thr` and press **TAB**
+ * start typing `IllegalArgumen` and pick with code completation list once available
+ * press  **Ctrl+Shift+ENTER**/**Ctrl+Shift+ENTER** to complete the line with semocolon
+ 
+## Task 2 - Debuging
