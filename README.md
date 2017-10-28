@@ -1,4 +1,4 @@
-# intellij-workshop
+# intellij workshop
 
 ## Task 1 - TDD
 1. Create feature branch - **Alt+` 7 New Branch**/**Ctrl+V 7 New Branch**
