@@ -19,7 +19,7 @@ def "should throw IllegalArgumentException when client id is: #clientId"() {
 ```
 1. Go to the above the test case method - **Ctrl+[**/**Cmd+[** and **UP**
 1. Create in instance of tested class by
- 1.1 typing `OrderService` when name will show in popup pick it
+ * typing `OrderService` when name will show in popup pick it
  * press **Spaca** and then **Ctrl+Space** to get suggestions of field name
  * pick first suggestion and press **Enter**
  * type ` = new ` and press **Ctrl+Shift+Enter**/**Cmd+Shift+Enter**
