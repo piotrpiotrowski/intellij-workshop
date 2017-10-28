@@ -1,3 +1,3 @@
 # intellij workshop
 
-## [Task 1 - TDD](task1)
+## [Task 1 - TDD](task1.md)
