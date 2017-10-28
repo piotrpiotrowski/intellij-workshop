@@ -29,16 +29,16 @@
           service.order(clientId)
     ```
 1. Copy `then:`` block
-```java
-  then:
-      thrown(IllegalArgumentException)
-```
+    ```java
+      then:
+          thrown(IllegalArgumentException)
+    ```
 1. Copy `where:`` block  
-```java
-where:
-        clientId | _
-        null     | _
-```        
+    ```java
+    where:
+            clientId | _
+            null     | _
+    ```        
 1. Duplicate first case in `where:` block and change it to `""` - **Ctrl+D**/**Cmd+D**
 1. Delete `given:` block and following blank line - **Ctrl+Y**/**Cmd+Y**
 1. Edit second column in `where:` block 
