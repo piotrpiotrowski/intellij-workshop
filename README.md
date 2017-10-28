@@ -28,14 +28,17 @@ def "should throw IllegalArgumentException when client id is: #clientId"() {
    when:
       service.order(clientId)
 ```
-1. Copie `then:`` block
+1. Copy `then:`` block
 ```java
   then:
       thrown(IllegalArgumentException)
 ```
-1. Copie `where:`` block  
+1. Copy `where:`` block  
 ```java
 where:
         clientId | _
         null     | _
 ```        
+1. Duplicate first case in `where:` block and change it to `""` - **Ctrl+D**/**Cmd+D**
+1. Delete `given:` block and following blank line - **Ctrl+Y**/**Cmd+Y**
+1. Edit second column in `where:` block - set cursor before first column press **Alt+Alt+3*DOWN**
