@@ -1,6 +1,11 @@
-# intellij workshop
-
 ## Task 1 - TDD
+We are going to implement pizza ordering service using Test Driven Development approach.
+
+### Prerequisites 
+* [Spock Framework](http://spockframework.org/spock/docs/1.1/index.html) plugin installed
+* Git support in Intellij enabled
+
+### Steps
 1. Create feature branch - **Alt+` 7 New Branch**/**Ctrl+V 7 New Branch**
 1. Open class `org.siemasoft.intellij.workshop.OrderSerwice` - **Ctrl+N**/**Cmd+O**
 1. Move it to `pizza` package - **F6**
