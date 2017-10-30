@@ -61,3 +61,5 @@
     * start typing `IllegalArgumen` and pick with code completation list once available
     * press  **Ctrl+Shift+ENTER**/**Ctrl+Shift+ENTER** to complete the line with semocolon
 1. Run tests again -  **Ctrl+F10**/**Ctrl+R** (Does it pass?)   
+
+*[Next task - debugging  >>](task2.md)*
