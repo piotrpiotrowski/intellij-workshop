@@ -13,10 +13,10 @@ We need to debug `OrderService.order()` to find out what is wrong with current i
    * do not worry just set breakpoint on `if` 
    * click right button on top of stack and pick *Drop Frame*
    * resume debuger - **F9**
-   * continue to next test case `clientId=""`- **F9** two times
+   * continue to next line - **F8**
+   * continue to next test case `clientId=""`- **F9**
 1. Now we stopped on `if` again, go into `isEmpty()` method - **F7**
-    > if you want to go back level up press **Shift+F8** <br>
-    > if you want to step over to next line on the same level press **F8**
+    > if you want to go back level up press **Shift+F8**
 1. We need to understand which condition is wrong:
     * select first one - **Ctrl+W**/**Alt+UP**
     * press **Alt+F8**
