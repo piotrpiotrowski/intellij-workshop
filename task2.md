@@ -17,4 +17,5 @@ We need to debug `OrderService.order()` to find out what is wrong with current i
     * select first one - **Ctrl+W**/**Alt+UP**
     * press **Alt+F8**
     * *Eveluate expression* pops up, press **ENTER** to evaluate
-    * it looks ok so lets do the same for the second one
+    * first condition looks ok, so lets do the same for the second one
+1.    
