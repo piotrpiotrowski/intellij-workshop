@@ -15,7 +15,8 @@ We need to debug `OrderService.order()` to find out what is wrong with current i
    * resume debuger - **F9**
    * continue to next test case `clientId=""`- **F9** two times
 1. Now we stopped on `if` again, go into `isEmpty()` method - **F7**
-    > if you want to go back level up press **Shift+F8**    
+    > if you want to go back level up press **Shift+F8** <br>
+    > if you want to step over to next line on the same level press **F8**
 1. We need to understand which condition is wrong:
     * select first one - **Ctrl+W**/**Alt+UP**
     * press **Alt+F8**
