@@ -61,6 +61,9 @@ We are going to implement pizza ordering service using Test Driven Development a
 
       }
     ```
+1. Extract `if` conditions to separate method called `isEmpty()`
+    * select entire code in `if()`  - press **Ctrl+W**/**Alt+UP** three times
+    * press **Ctrl+Alt+M**/**Cmd+Alt+M** and name method `isEmpty()`
 1. Implement throwing `llegalArgumentException`: 
     * start typing `thr` and press **TAB**
     * start typing `IllegalArgumen` and pick with code completation list once available
