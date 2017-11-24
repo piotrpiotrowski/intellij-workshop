@@ -45,7 +45,7 @@ We are going to implement pizza ordering service using Test Driven Development a
             null     | _
     ```        
 1. Duplicate first case in `where:` block and change it to `""` - **Ctrl+D**/**Cmd+D**
-1. Delete `given:` block and following blank line - **Ctrl+Y**/**Cmd+Y**
+1. Delete `given:` block and following blank line - **Ctrl+Y**/**Cmd+BACKSPACE**
 1. Edit second column in `where:` block 
     * set cursor before first column press **Alt+Alt+3xDOWN**
     * go to end of the line **End**/**Cmd+RIGHT**
