@@ -33,12 +33,12 @@ We are going to implement pizza ordering service using Test Driven Development a
      when:
           service.order(clientId)
     ```
-1. Copy `then:`` block
+1. Copy `then:` block
     ```java
       then:
           thrown(IllegalArgumentException)
     ```
-1. Copy `where:`` block  
+1. Copy `where:` block  
     ```java
     where:
             clientId | _
