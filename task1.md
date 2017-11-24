@@ -27,7 +27,7 @@ We are going to implement pizza ordering service using Test Driven Development a
     * typing `OrderService` when name will show in popup pick it
     * press **Spaca** and then **Ctrl+Space** to get suggestions of field name
     * pick first suggestion and press **Enter**
-    * type ` = new ` and press **Ctrl+Shift+Enter**/**Cmd+Shift+Enter**
+    * type ` = new ` and press **Ctrl+Shift+Space**/**Cmd+Shift+Space**
  1. Go to the `when` block and type   
     ```java
      when:
