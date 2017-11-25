@@ -8,7 +8,7 @@ Steps
    * configure jdk9 project structure - **Ctrl+Alt+Shift+S**/**Cmd+;**
      * add it in *Project* tab
      * pick it in *Modules* tab
-  * set `sourceCompatibility = 9` in `build.gradle`
+   * set `sourceCompatibility = 9` in `build.gradle`
 1. Now we can create first module in project root directory:
   * go to *Project* panel - **Alt+1**/**Cmd+1**
   * move to root using UP arrow
