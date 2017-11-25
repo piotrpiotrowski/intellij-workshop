@@ -1,11 +1,12 @@
-package org.siemasoft.pizza
+package org.siemasoft.pizza.service.impl
 
+import org.siemasoft.pizza.service.api.OrderService
 import spock.lang.Specification
 import spock.lang.Unroll
 
-class OrderServiceSpec extends Specification {
+class OrderServiceImplSpec extends Specification {
 
-    OrderService service = new OrderService()
+    OrderService service = new OrderServiceImpl()
 
     @Unroll
     def "should throw IllegalArgumentException when clientId #caseDescription"() {

@@ -1,18 +1,38 @@
-group 'org.siemasoft.intellij.workshop'
-version '1.0-SNAPSHOT'
+subprojects {
+    version '1.0-SNAPSHOT'
 
-apply plugin: 'groovy'
-apply plugin: 'java'
+    apply plugin: 'java-library'
+    apply plugin: 'groovy'
 
-sourceCompatibility = 1.8
-
-repositories {
-    mavenCentral()
-}
+    sourceCompatibility = '11'
+    targetCompatibility = '1'
 
 dependencies {
     testCompile 'org.codehaus.groovy:groovy-all:2.5.4'
     testCompile 'org.spockframework:spock-core:1.2-groovy-2.5'
     testCompile 'net.bytebuddy:byte-buddy:1.9.4'
     testCompile 'org.objenesis:objenesis:3.0.1'
+}
+
+    afterEvaluate { Project project ->
+        repositories {
+            jcenter()
+        }
+        if (project.hasProperty("moduleName")) {
+            compileJava {
+                destinationDir = project.file("build/mods")
+                options.compilerArgs = [
+                        '--module-path', classpath.asPath,
+                        '--module-source-path', sourceSets.main.java.srcDirs.join(System.getProperty('path.separator')),
+                        '-m', moduleName,
+                ]
+                doLast {
+                    copy {
+                        from file(new File(destinationDir, moduleName))
+                        into sourceSets.main.java.outputDir.absolutePath
+                    }
+                }
+            }
+        }
+    }
 }

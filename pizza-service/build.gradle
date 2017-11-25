@@ -1,0 +1,5 @@
+ext.moduleName = 'org.siemasoft.pizza.service'
+
+dependencies {
+    implementation 'org.apache.commons:commons-lang3:3.7'
+}
