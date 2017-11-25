@@ -15,15 +15,15 @@ Steps
     * press **Alt+Insert**/**Cmd+N**
     * provide name `pizza-service`
 1. Setup multi-module project structore:
-    * clean up *pizza-service/build.gradle* like below
+    * open *build.gradle*
+    * find it on the list of recently opened files - **Ctrl+E**/**Cmd+E**
+    * select everything - **Ctrl+A**/**Cmd+A**
+    * wrap in block - **Ctrl+Alt+T 5**/**Cmd+Alt+T 5**
+    * go to the top of the block - **Ctrl+[**/**Cmd+[**
+    * type *allProjects*
+    * reformat file - **Ctrl+Alt+L**/**Cmd+Alt+L**
+1. Clean up *pizza-service/build.gradle* like below
     ```
     dependencies {
     }
-    ```
-    * surround everything in *build.gradle*
-      * find it on the list of recently opened files - **Ctrl+E**/**Cmd+E**
-      * select everything - **Ctrl+A**/**Cmd+A**
-      * wrap in block - **Ctrl+Alt+T 5**/**Cmd+Alt+T 5**
-      * go to the top of the block - **Ctrl+[**/**Cmd+[** 
-      * type *allProjects*
-      * reformat file - **Ctrl+Alt+L**/**Cmd+Alt+L**
+    ```     
