@@ -8,10 +8,10 @@ subprojects {
     targetCompatibility = '11'
 
 dependencies {
-    testCompile 'org.codehaus.groovy:groovy-all:2.5.4'
-    testCompile 'org.spockframework:spock-core:1.2-groovy-2.5'
-    testCompile 'net.bytebuddy:byte-buddy:1.9.4'
-    testCompile 'org.objenesis:objenesis:3.0.1'
+    testImplementation 'org.codehaus.groovy:groovy-all:2.5.4'
+    testImplementation 'org.spockframework:spock-core:1.2-groovy-2.5'
+    testImplementation 'net.bytebuddy:byte-buddy:1.9.4'
+    testImplementation 'org.objenesis:objenesis:3.0.1'
 }
 
     afterEvaluate { Project project ->
