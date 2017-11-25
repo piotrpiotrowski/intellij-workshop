@@ -26,4 +26,5 @@ Steps
     ```
     dependencies {
     }
-    ```     
+    ```
+1. Remove folder *pizza-service/src* -  **Delete**
