@@ -14,4 +14,16 @@ Steps
     * move to root using UP arrow
     * press **Alt+Insert**/**Cmd+N**
     * provide name `pizza-service`
-    * open `build.gradle` in new module and make sure that `sourceCompatibility = 9`
+1. Setup multi-module project structore:
+    * clean up *pizza-service/build.gradle* like below
+    ```
+    dependencies {
+    }
+    ```
+    * surround everything in *build.gradle*
+      * find it on the list of recently opened files - **Ctrl+E**/**Cmd+E**
+      * select everything - **Ctrl+A**/**Cmd+A**
+      * wrap in block - **Ctrl+Alt+T 5**/**Cmd+Alt+T 5**
+      * go to the top of the block - **Ctrl+[**/**Cmd+[** 
+      * type *allProjects*
+      * reformat file - **Ctrl+Alt+L**/**Cmd+Alt+L**
