@@ -57,6 +57,10 @@ We are going to implement pizza ordering service using Test Driven Development a
 
       }
     ```
+1. Create constant `EMPTY`:   
+    * press **Alt+ENTER** 
+    * pick option *Create constant field*
+    * assign value `new String("")` (it might be simplier but it is done by purpuse)
 1. Extract `if` conditions to separate method called `isEmpty()`
     * select entire code in `if()`  - press **Ctrl+W**/**Alt+UP** three times
     * press **Ctrl+Alt+M**/**Cmd+Alt+M** and name method `isEmpty()`
