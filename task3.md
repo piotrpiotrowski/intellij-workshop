@@ -28,3 +28,4 @@ Steps
     }
     ```
 1. Remove folder *pizza-service/src* -  **Delete**
+1. Move folder *src* to *pizza-service* module - **F6**
