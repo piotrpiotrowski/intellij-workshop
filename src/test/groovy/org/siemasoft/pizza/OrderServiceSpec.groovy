@@ -8,7 +8,7 @@ class OrderServiceSpec extends Specification {
     OrderService service = new OrderService()
 
     @Unroll
-    def "should throw IllegalArgumentException when clientId #caseDescription "() {
+    def "should throw IllegalArgumentException when clientId #caseDescription"() {
         when:
         service.order(clientId)
 

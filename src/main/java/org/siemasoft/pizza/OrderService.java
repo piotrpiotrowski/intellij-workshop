@@ -11,7 +11,7 @@ public class OrderService {
     }
 
     private boolean isEmpty(String clientId) {
-        return clientId == null || clientId == EMPTY;
+        return clientId == null || clientId.equals(EMPTY);
     }
 
 }
