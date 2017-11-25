@@ -53,7 +53,7 @@ We are going to implement pizza ordering service using Test Driven Development a
     * pick option *Create Method*
 1. Go to implementation and copy if block to ``order()`` method- **Ctrl+Shift+T**/**Cmd+Shift+T**
     ```java
-      if (clientId == null || clientId == "") {
+      if (clientId == null || clientId == EMPTY) {
 
       }
     ```
