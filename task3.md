@@ -42,6 +42,7 @@ Steps
     * go to *Version Control* tab - **Alt+9**/**Cmd+9**
     * review list, all should be under *Default* set,
     * if you have any file under *Unversioned Files* set add them - **Ctrl+Alt+A**/**Cmd+Alt+A**
+    
     > You can group you changes in changelist.
     It can be usefull when changed some files for local purpuses and do not want to commit them by mistake.
     In this tab you can create your own changelist and manage them.
