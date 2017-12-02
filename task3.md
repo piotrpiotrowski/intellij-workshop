@@ -32,6 +32,9 @@ Steps
     ```
 1. Remove folder *pizza-service/src*:
     * go to navigation bar - **Alt+HOME**/**Cmd+UP**
-    * remvoe pressing **Delete**
+    * move left - **LEFT**
+    * move down and find *src* - **DOWN**
+      > You can filter by typing desired name
+    * delete pressing **Delete**
 1. Move folder *src* to *pizza-service* module - **F6**
     > Remember smart-completation works also here
