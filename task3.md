@@ -15,8 +15,7 @@ Steps
     * press **Alt+Insert**/**Cmd+N**
     * provide name `pizza-service`
 1. Setup multi-module project structore:
-    * open *build.gradle*
-    * find it on the list of recently opened files - **Ctrl+E**/**Cmd+E**
+    * open *build.gradle* finding it on the list of recently opened files - **Ctrl+E**/**Cmd+E**
     * select everything - **Ctrl+A**/**Cmd+A**
     * wrap in block - **Ctrl+Alt+T 5**/**Cmd+Alt+T 5**
     * go to the top of the block - **Ctrl+[**/**Cmd+[**
@@ -29,3 +28,4 @@ Steps
     ```
 1. Remove folder *pizza-service/src* -  **Delete**
 1. Move folder *src* to *pizza-service* module - **F6**
+    > Remember smart-completation works also here
