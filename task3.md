@@ -71,4 +71,26 @@ Steps
       ```
     * it does not work, check compilation error - **Ctrl+F1**/**Cmd+F1**
     * I see we need to provide package name, so delete `.OrderService` - **Ctrl+W BACKSPACE**/**Alt+UP BACKSPACE**
+    * copy module name for the future use
+1. Modify `pizza-service/build.gradle`, more details are [here](https://guides.gradle.org/building-java-9-modules/#step_1_produce_a_java_9_module_for_a_single_subproject):
+    * add ` compileJava` configuration by coping below code
+      ```
+      ext.moduleName = 'someName'
 
+      compileJava {
+          inputs.property("moduleName", moduleName)
+          doFirst {
+              options.compilerArgs = [
+                      '--module-path', classpath.asPath,
+              ]
+              classpath = files()
+          }
+      }
+
+      dependencies {
+      }
+      ```
+    * replace `someName` by module name:
+      * select `someName` - **Ctrl+W**/**Alt+UP**
+      * press **Ctrl+Shift+V**/**Cmd+Shift+V** to access previously copied things
+      * select module name on the list and press **ENTER**
