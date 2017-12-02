@@ -25,7 +25,7 @@ Steps
     * open it by **Ctrl+Shoft+N**/**Cmd+Shift+O**
     * start typing *pizza-* and press **Ctrl+SPACE**/**Cmd+SPACE**
     * type */buil* and press **Ctrl+SPACE**/**Cmd+SPACE**
-    * remove unnecessary lines - **Ctrl+Y**/**Cmd+Backspace** 
+    * remove unnecessary lines - **Ctrl+Y**/**Cmd+Backspace**
     ```
     dependencies {
     }
@@ -38,3 +38,11 @@ Steps
     * delete pressing **Delete**
 1. Move folder *src* to *pizza-service* module - **F6**
     > Remember smart-completation works also here
+1. Make sure all files are added to git:
+    * go to *Version Control* tab - **Alt+9**/**Cmd+9**
+    * review list, all should be under *Default* set,
+    * if you have any file under *Unversioned Files* set add them - **Ctrl+Alt+A**/**Cmd+Alt+A**
+    > You can group you changes in changelist.
+    It can be usefull when changed some files for local purpuses and do not want to commit them by mistake.
+    In this tab you can create your own changelist and manage them.
+    Commit changes popup let you select changelist to use in dropdown on the top
