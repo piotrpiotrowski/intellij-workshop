@@ -59,4 +59,16 @@ Steps
 1. Move interface to new package *api*:
     * go to *OrderService* - **Ctrl+N**/**Cmd+O**
     * move it to package *api* - **F6**
+1. Export interface to outside world:
+    * go to interface name and copy it with package name - **Ctrl+Shift+Alt+C**/**Cmd+Shift+Alt+C**
+    * go to *module-info.java* by pressing **Ctrl+Shift+E**/**Cmd+Shift+E** and finding it by name on the list
+    * add *export* and paste content of clipboard
+    * add semicolon on the end pressing **Ctrl+Shift+ENTER**/**Cmd+Shift+ENTER**, should be like that:
+      ```java
+      module org.siemasoft.pizza.service {
+        exports org.siemasoft.pizza.api.OrderService;
+      }
+      ```
+    * it does not work, check compilation error - **Ctrl+F1**/**Cmd+F1**
+    * I see we need to provide package name, so delete *.OrderService* - **Ctrl+W BACKSPACE**/**Alt+UP BACKSPACE**
 
