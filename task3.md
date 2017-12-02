@@ -14,7 +14,7 @@ Steps
     * move to root using UP arrow
     * press **Alt+Insert**/**Cmd+N**
     * provide name `pizza-service`
-1. Setup multi-module project structore:
+1. Setup multi-module project structure:
     * open *build.gradle* finding it on the list of recently opened files - **Ctrl+E**/**Cmd+E**
     * select everything - **Ctrl+A**/**Cmd+A**
     * wrap in block - **Ctrl+Alt+T 5**/**Cmd+Alt+T 5**
