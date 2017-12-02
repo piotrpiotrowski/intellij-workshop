@@ -1,7 +1,5 @@
 ## Task 3 - Java 9
 
-
-
 Steps
 1. Java 9 is available so this is good moment to use it:
    * install jdk9 on your machine
@@ -52,4 +50,10 @@ Steps
     * create file *module-info.java* by pressing **Alt+Insert**/**Cmd+N**
     * find it on the list by typing *module* and press **ENTER**
     * fill placeholder inside by module nane *org.siemasoft.pizza.service*
+1. Idea behind the modules is to improve encapsulation, so we shoudl expose behavior of *OderService* by interface:
+    * go to *OrderServce* - **Ctrl+N**/**Cmd+O**
+    * rename it to *OrderServceImpl* - **Shift+F6**
+    * go to order method by pressing **Ctrl+F12**/**Cmd+F12** and typing *ord*
+    * extrat interface **Ctrl+Shift+Alt 0**/**Ctrl+T**
+    * name it *OrderService*
 
