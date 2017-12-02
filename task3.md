@@ -74,7 +74,7 @@ Steps
     * copy module name for the future use
 1. Modify `pizza-service/build.gradle`, more details are [here](https://guides.gradle.org/building-java-9-modules/#step_1_produce_a_java_9_module_for_a_single_subproject):
     * add ` compileJava` configuration by coping below code
-      ```
+      ```groovy
       ext.moduleName = 'someName'
 
       compileJava {
@@ -94,3 +94,18 @@ Steps
       * select `someName` - **Ctrl+W**/**Alt+UP**
       * press **Ctrl+Shift+V**/**Cmd+Shift+V** to access previously copied things
       * select module name on the list and press **ENTER**
+    * add `testCompileJava` configuration by coping below code
+      ```groovy
+        compileTestJava {
+        inputs.property("moduleName", moduleName)
+        doFirst {
+            options.compilerArgs = [
+                '--module-path', classpath.asPath, 
+                '--add-modules', 'junit',  
+                '--add-reads', "$moduleName=junit", 
+                '--patch-module', "$moduleName=" + files(sourceSets.test.java.srcDirs).asPath, 
+            ]
+            classpath = files()
+          }
+        }
+      ```
