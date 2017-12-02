@@ -18,7 +18,7 @@ Steps
     * open *build.gradle* finding it on the list of recently edited files - **Ctrl+Shift+E**/**Cmd+Shift+E**
     * select everything - **Ctrl+A**/**Cmd+A**
     * wrap in block - **Ctrl+Alt+T 5**/**Cmd+Alt+T 5**
-    * go to the top of the block - **Ctrl+[**/**Cmd+[**
+    * go to the top of the block - **Ctrl+\[**/**Cmd+\[**
     * start typing *allProjects*
     * reformat file - **Ctrl+Alt+L**/**Cmd+Alt+L**
 1. Clean up *pizza-service/build.gradle*:
@@ -30,6 +30,8 @@ Steps
     dependencies {
     }
     ```
-1. Remove folder *pizza-service/src* -  **Delete**
+1. Remove folder *pizza-service/src*:
+    * go to navigation bar - **Alt+HOME**/**Cmd+UP**
+    * remvoe pressing **Delete**
 1. Move folder *src* to *pizza-service* module - **F6**
     > Remember smart-completation works also here
