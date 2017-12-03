@@ -102,8 +102,8 @@ Steps
         doFirst {
             options.compilerArgs = [
                 '--module-path', classpath.asPath, 
-                '--add-modules', 'junit',  
-                '--add-reads', "$moduleName=junit", 
+                '--add-modules', 'spock-core',  
+                '--add-reads', "$moduleName=spock-core", 
                 '--patch-module', "$moduleName=" + files(sourceSets.test.java.srcDirs).asPath, 
             ]
             classpath = files()
