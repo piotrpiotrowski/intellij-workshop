@@ -110,3 +110,18 @@ Steps
           }
         }
       ```
+    * add `test` configuration
+      ```groovy
+        test {
+          inputs.property("moduleName", moduleName)
+          doFirst {
+              jvmArgs = [
+                  '--module-path', classpath.asPath, 
+                  '--add-modules', 'ALL-MODULE-PATH', 
+                  '--add-reads', "$moduleName=junit", 
+                  '--patch-module', "$moduleName=" + files(sourceSets.test.java.outputDir).asPath, 
+              ]
+              classpath = files()
+          }
+        }
+      ```
