@@ -94,6 +94,7 @@ Steps
       * select `someName` - **Ctrl+W**/**Alt+UP**
       * press **Ctrl+Shift+V**/**Cmd+Shift+V** to access previously copied things
       * select module name on the list and press **ENTER**
+    * update `spock` version to `1.2-SNAPSHOT`  
     * add `testCompileJava` configuration by coping below code
       ```groovy
         compileTestJava {
