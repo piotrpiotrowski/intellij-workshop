@@ -110,7 +110,7 @@ Steps
           }
         }
       ```
-    * add `test` configuration
+    * add `test` configuration by coping below code
       ```groovy
         test {
           inputs.property("moduleName", moduleName)
