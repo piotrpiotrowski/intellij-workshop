@@ -95,7 +95,7 @@ Steps
       * select `someName` - **Ctrl+W**/**Alt+UP**
       * press **Ctrl+Shift+V**/**Cmd+Shift+V** to access previously copied things
       * select module name on the list and press **ENTER**
-    * update `spock` version to `1.2-SNAPSHOT`, you need to add snapshots repository in `repositories`:
+    * update `spock` version to `1.2-groovy-2.4-SNAPSHOT`, you need to add snapshots repository in `repositories`:
       ```groovy
       maven {
             url 'https://oss.sonatype.org/content/repositories/snapshots/'
