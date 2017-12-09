@@ -124,7 +124,7 @@ Steps
               jvmArgs = [
                   '--module-path', classpath.asPath, 
                   '--add-modules', 'ALL-MODULE-PATH', 
-                  '--add-reads', "$moduleName=junit", 
+                  '--add-reads', "$moduleName=spock-core", 
                   '--patch-module', "$moduleName=" + files(sourceSets.test.java.outputDir).asPath, 
               ]
               classpath = files()
