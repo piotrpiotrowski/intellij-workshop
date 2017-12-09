@@ -54,7 +54,7 @@ Steps
     * go to `OrderServce` - **Ctrl+N**/**Cmd+O**
     * rename it to `OrderServceImpl` - **Shift+F6**
     * go to order method by pressing **Ctrl+F12**/**Cmd+F12** and typing `ord`
-    * extrat interface **Ctrl+Shift+Alt 0**/**Ctrl+T**
+    * extrat interface **Ctrl+Shift+Alt 0**/**Ctrl+T 0**
     * name it `OrderService`
 1. Move interface to new package *api*:
     * go to `OrderService` - **Ctrl+N**/**Cmd+O**
