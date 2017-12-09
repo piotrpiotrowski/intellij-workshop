@@ -60,7 +60,8 @@ Steps
     * go to `OrderService` - **Ctrl+N**/**Cmd+O**
     * move it to package `api` - **F6**
 1. Export interface to outside world:
-    * go to interface name and copy it with package name - **Ctrl+Shift+Alt+C**/**Cmd+Shift+Alt+C**
+    * go to interface - press outside of method **Ctrl+U**/**Cmd+U** 
+    * copy it's name with package name - **Ctrl+Shift+Alt+C**/**Cmd+Shift+Alt+C**
     * go to `module-info.java` by pressing **Ctrl+Shift+E**/**Cmd+Shift+E** and finding it by name on the list
     * add `export` and paste content of clipboard
     * add semicolon on the end pressing **Ctrl+Shift+ENTER**/**Cmd+Shift+ENTER**, should be like that:
