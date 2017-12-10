@@ -133,3 +133,4 @@ Steps
           }
         }
       ```
+1. Run tests
