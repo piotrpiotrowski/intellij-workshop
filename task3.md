@@ -110,3 +110,18 @@ Steps
     * I see we need to provide package name, so delete `.OrderService` - **Ctrl+W BACKSPACE**/**Alt+UP BACKSPACE**
     * copy module name for the future use
 1. Run tests
+1. Replace private method `isEmpty` with `StringUtils.isEmpty`
+    * add dependency to `pizza-service/build.gradle`
+      ```groovy
+        implementation 'org.apache.commons:commons-lang3:3.7'
+      ```
+    * open OrderServiceImpl - **Ctrl+N**/**Cmd+O**
+    * find method `isEmpty` pressing **Ctrl+F12**/**Cmd+F12** and typing `isEmp`
+    * replace code by `return StringUtils.isEmpty`
+      * select everything after `return` - **Ctrl+W**/**Alt+UP** 3 times
+      * type `StringUtils.` and then `isEm` on the list and **ENTER**
+      * now you are inside parentheses use smart auto completation **Ctrl+Shift+SPACE**/**Cmd+Shift+SPACE**
+      * add `;` pressing **Ctrl+Shift+ENTER**/**Cmd+Shift+ENTER**
+    * you should see that import highlight in red, go to this error - **F2** 
+    * check available fixes - **Alt+Enter**
+    * use first one `Add required ...`
