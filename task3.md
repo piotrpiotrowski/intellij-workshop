@@ -41,8 +41,9 @@ Steps
     * go to navigation bar - **Alt+HOME**/**Cmd+UP**
     * move to `pizza-service`
     * insert directory with name `src/main/java/org.siemasoft.pizza.service` -  **Alt+Insert**/**Cmd+N**
-1. Move folder `src` to `pizza-service` module - **F6**
+1. Move class `OrderService` to `pizza-service/src/main/java/org.siemasoft.pizza.service/impl` module - **F6**
     > Remember smart-completation works also here
+1. Move test `OrderServiceSpec` to `pizza-service/src/test/groovy/org/siemasoft/pizza/service/impl` module - **F6**    
 1. Make sure all files are added to git:
     * go to `Version Control` tab - **Alt+9**/**Cmd+9**
     * review list, all should be under `Default` set,
@@ -53,7 +54,7 @@ Steps
     In this tab you can create your own changelist and manage them.
     Commit changes popup let you select changelist to use in dropdown on the top
 1. Add `module-info.java` to `pizza-service/src/java`:
-    * use navigation bar to select folder `pizza-service/src/java` -  **Alt+HOME**/**Cmd+UP**
+    * use navigation bar to select folder `pizza-service/src/java/org.siemasoft.pizza.service` -  **Alt+HOME**/**Cmd+UP**
     * create file `module-info.java` by pressing **Alt+Insert**/**Cmd+N**
     * find it on the list by typing `module` and press **ENTER**
     * fill placeholder inside by module nane `org.siemasoft.pizza.service`
@@ -74,68 +75,10 @@ Steps
     * add semicolon on the end pressing **Ctrl+Shift+ENTER**/**Cmd+Shift+ENTER**, should be like that:
       ```java
       module org.siemasoft.pizza.service {
-        exports org.siemasoft.pizza.api.OrderService;
+        exports org.siemasoft.pizza.service.api.OrderService;
       }
       ```
     * it does not work, check compilation error - **Ctrl+F1**/**Cmd+F1**
     * I see we need to provide package name, so delete `.OrderService` - **Ctrl+W BACKSPACE**/**Alt+UP BACKSPACE**
     * copy module name for the future use
-1. Modify `pizza-service/build.gradle`, more details are [here](https://guides.gradle.org/building-java-9-modules/#step_1_produce_a_java_9_module_for_a_single_subproject):
-    * add ` compileJava` configuration by coping below code
-      ```groovy
-      ext.moduleName = 'someName'
-
-      compileJava {
-          inputs.property("moduleName", moduleName)
-          doFirst {
-              options.compilerArgs = [
-                      '--module-path', classpath.asPath,
-              ]
-              classpath = files()
-          }
-      }
-
-      dependencies {
-      }
-      ```
-    * replace `someName` by module name:
-      * select `someName` - **Ctrl+W**/**Alt+UP**
-      * press **Ctrl+Shift+V**/**Cmd+Shift+V** to access previously copied things
-      * select module name on the list and press **ENTER**
-    * update `spock` version to `1.2-groovy-2.4-SNAPSHOT`, you need to add snapshots repository in `repositories`:
-      ```groovy
-      maven {
-            url 'https://oss.sonatype.org/content/repositories/snapshots/'
-        }
-      ```  
-    * add `testCompileJava` configuration by coping below code
-      ```groovy
-        compileTestJava {
-        inputs.property("moduleName", moduleName)
-        doFirst {
-            options.compilerArgs = [
-                '--module-path', classpath.asPath, 
-                '--add-modules', 'spock-core',  
-                '--add-reads', "$moduleName=spock-core", 
-                '--patch-module', "$moduleName=" + files(sourceSets.test.java.srcDirs).asPath, 
-            ]
-            classpath = files()
-          }
-        }
-      ```
-    * add `test` configuration by coping below code
-      ```groovy
-        test {
-          inputs.property("moduleName", moduleName)
-          doFirst {
-              jvmArgs = [
-                  '--module-path', classpath.asPath, 
-                  '--add-modules', 'ALL-MODULE-PATH', 
-                  '--add-reads', "$moduleName=spock-core", 
-                  '--patch-module', "$moduleName=" + files(sourceSets.test.java.outputDir).asPath, 
-              ]
-              classpath = files()
-          }
-        }
-      ```
 1. Run tests
