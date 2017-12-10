@@ -1,4 +1,4 @@
-## Task 3 - Java 9
+## Task 3 - First module in Java 9 
 
 > If you wan to start from this task, checkout solution for task2 by **Alt+` 7 task_2_debuging**/**Ctrl+V 7 task_2_debuging**
 
