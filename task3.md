@@ -1,5 +1,7 @@
 ## Task 3 - Java 9
 
+> If you wan to start from this task, checkout solution for task1 by Alt+` 7 task_2_debuging/Ctrl+V 7 task_2_debuging
+
 Steps
 1. Java 9 is available so this is good moment to use it:
    * install jdk9 on your machine
