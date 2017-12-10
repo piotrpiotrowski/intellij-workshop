@@ -125,3 +125,17 @@ Steps
     * you should see that import highlight in red, go to this error - **F2** 
     * check available fixes - **Alt+Enter**
     * use first one `Add required ...`
+1. Run tests    
+1. Commit changes **Ctrl+K**/*Cmd+K**
+    * make sure that checkbox `Perform code analysis` is checked
+    * review changes press **Shift+Tab Ctrl+D**/**Shift+Tab Cmd+D**
+    * use *F7** to go to next change, **Shift+F7** going opposite direction
+    * press **ESC** to leave `Previev Changes Window`
+    * commit changes by pressing **Ctrl+ENTER**
+    * you should see `Code analysis` popup, pick option `Review`
+1. Review list of warnings
+    * open second one by pressing **ENTER**
+    * press **ESC** to go to editor
+    * check available fixes, in this case constant is not used and can be removed 
+1. Run tests   
+1. Commit again this time choose option `Commit`
