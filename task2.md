@@ -3,7 +3,7 @@
 We need to debug `OrderService.order()` to find out what is wrong with current implementation.
 > Debugging is not as fluent process as writing code so in some cases usage of mouse is more convinient.
 
-> If you wan to start from this task, checkout solution for task1 by Alt+` 7 task_1_tdd/Ctrl+V 7 task_1_tdd
+> If you wan to start from this task, checkout solution for task1 by **Alt+` 7 task_1_tdd**/**Ctrl+V 7 task_1_tdd**
 
 ### Steps
 1. Toogle breakpoint on `throw new IllegalArgumentException()` - **Ctrl+F8**/**Cmd+F8**
