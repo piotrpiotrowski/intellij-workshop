@@ -8,7 +8,8 @@ Steps
    * configure jdk9 project structure - **Ctrl+Alt+Shift+S**/**Cmd+;**
      * add it in `Project` tab
      * pick it in `Modules` tab
-   * set `sourceCompatibility = 9` in `build.gradle` - **Ctrl+E**/**Cmd+E**
+   * set `sourceCompatibility = '9'` in `build.gradle` - **Ctrl+E**/**Cmd+E**
+   * add `targetCompatibility = '9'`
 1. Now we can create first module in project root directory:
     * go to `Project` panel - **Alt+1**/**Cmd+1**
     * move to root using UP arrow
@@ -21,6 +22,33 @@ Steps
     * go to the top of the block - **Ctrl+\[**/**Cmd+\[**
     * start typing `subprojects`
     * reformat file - **Ctrl+Alt+L**/**Cmd+Alt+L**
+    * remove `group` - press in line **Ctrl+Y**/**Cmd+Backspace**
+    * replase `java` plugin with `java-library`
+    * change `testCompile` to `testImplementation` - press on word **Ctrl+Shift+Alt+J**/**Ctrl+G** and type `testImplementation`
+    * add below code on the end of `subprojects` block:
+    ```groovy
+        afterEvaluate { Project project ->
+        repositories {
+            jcenter()
+        }
+        if (project.hasProperty("moduleName")) {
+            compileJava {
+                destinationDir = project.file("build/mods")
+                options.compilerArgs = [
+                        '--module-path', classpath.asPath,
+                        '--module-source-path', sourceSets.main.java.srcDirs.join(System.getProperty('path.separator')),
+                        '-m', moduleName,
+                ]
+                doLast {
+                    copy {
+                        from file(new File(destinationDir, moduleName))
+                        into sourceSets.main.java.outputDir.absolutePath
+                    }
+                }
+             }
+          }
+       }
+    ```
 1. Clean up `pizza-service/build.gradle`:
     * open it by **Ctrl+Shoft+N**/**Cmd+Shift+O**
     * start typing `pizza-` and press **Ctrl+SPACE**/**Cmd+SPACE**
