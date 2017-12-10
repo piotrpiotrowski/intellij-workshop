@@ -19,14 +19,15 @@ Steps
     * select everything - **Ctrl+A**/**Cmd+A**
     * wrap in block - **Ctrl+Alt+T 5**/**Cmd+Alt+T 5**
     * go to the top of the block - **Ctrl+\[**/**Cmd+\[**
-    * start typing `allProjects`
+    * start typing `subprojects`
     * reformat file - **Ctrl+Alt+L**/**Cmd+Alt+L**
 1. Clean up `pizza-service/build.gradle`:
     * open it by **Ctrl+Shoft+N**/**Cmd+Shift+O**
     * start typing `pizza-` and press **Ctrl+SPACE**/**Cmd+SPACE**
     * type `/buil` and press **Ctrl+SPACE**/**Cmd+SPACE**
     * remove unnecessary lines - **Ctrl+Y**/**Cmd+Backspace**
-    ```
+    ```groovy
+    ext.moduleName = 'org.siemasoft.pizza.service'
     dependencies {
     }
     ```
@@ -36,6 +37,10 @@ Steps
     * move down and find `src` - **DOWN**
       > You can filter by typing desired name
     * delete pressing **Delete**
+1.  Create module directory in `pizza-service`
+    * go to navigation bar - **Alt+HOME**/**Cmd+UP**
+    * move to `pizza-service`
+    * insert directory with name `src/main/java/org.siemasoft.pizza.service` -  **Alt+Insert**/**Cmd+N**
 1. Move folder `src` to `pizza-service` module - **F6**
     > Remember smart-completation works also here
 1. Make sure all files are added to git:
