@@ -125,6 +125,7 @@ Steps
     * you should see that import highlight in red, go to this error - **F2** 
     * check available fixes - **Alt+Enter**
     * use first one `Add required ...`
+1 Inline private `isEmpty()` - press **Ctrl+Alt+N**/**Cmd+Alt+N** on method invocation    
 1. Run tests    
 1. Commit changes **Ctrl+K**/*Cmd+K**
     * make sure that checkbox `Perform code analysis` is checked
