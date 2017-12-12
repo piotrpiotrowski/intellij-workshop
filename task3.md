@@ -127,7 +127,7 @@ Steps
     * use first one `Add required ...`
 1. Inline private `isEmpty()` - press **Ctrl+Alt+N**/**Cmd+Alt+N** on method invocation    
 1. Run tests    
-1. Commit changes **Ctrl+K**/*Cmd+K**
+1. Commit changes **Ctrl+K**/**Cmd+K**
     * make sure that checkbox `Perform code analysis` is checked
     * review changes press **Shift+Tab Ctrl+D**/**Shift+Tab Cmd+D**
     * use *F7** to go to next change, **Shift+F7** going opposite direction
