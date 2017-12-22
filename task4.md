@@ -14,3 +14,10 @@
 1. Method having more then 2 params is not good programming practice, so let fix it:
    * go to interface by pressing **Ctrl+B**/**Cmd+B**
    * extract parameter object - **Ctrl+Shift+Alt+T 6**/**Ctrl+T 6**
+1. Extract variable:
+   * select `new OrderDto(clientId, "hawajska", "small", "thin")` - press **Ctrl+W**/**Alt+UP** 3 times
+   * press **Ctrl+Alt+V**/**Cmd+Alt+V** on selection
+   * name it `order`
+   * go to `def` and press **Alt+ENTER** and pick `Declare explicite type`
+1. Move variable to `given:` block:
+   * 
