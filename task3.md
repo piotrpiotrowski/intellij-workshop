@@ -5,7 +5,7 @@
 Steps
 1. Java 9 is available so this is good moment to use it:
    * install jdk9 on your machine
-   * configure jdk9 project structure - **Ctrl+Alt+Shift+S**/**Cmd+;**
+   * configure jdk9 in project structure - **Ctrl+Alt+Shift+S**/**Cmd+;**
      * add it in `Project` tab
      * pick it in `Modules` tab
    * set `sourceCompatibility = '9'` in `build.gradle` - **Ctrl+E**/**Cmd+E**
@@ -24,7 +24,7 @@ Steps
     * reformat file - **Ctrl+Alt+L**/**Cmd+Alt+L**
     * remove `group` - press in line **Ctrl+Y**/**Cmd+Backspace**
     * replase `java` plugin with `java-library`
-    * change `testCompile` to `testImplementation` - press on word **Ctrl+Shift+Alt+J**/**Ctrl+G** and type `testImplementation`
+    * change `testCompile` to `testImplementation` - press **Ctrl+Shift+Alt+J**/**Ctrl+G** on the word and type `testImplementation`
     * add below code on the end of `subprojects` block:
     ```groovy
         afterEvaluate { Project project ->
@@ -50,7 +50,7 @@ Steps
        }
     ```
 1. Clean up `pizza-service/build.gradle`:
-    * open it by **Ctrl+Shoft+N**/**Cmd+Shift+O**
+    * open it by **Ctrl+Shift+N**/**Cmd+Shift+O**
     * start typing `pizza-` and press **Ctrl+SPACE**/**Cmd+SPACE**
     * type `/buil` and press **Ctrl+SPACE**/**Cmd+SPACE**
     * remove unnecessary lines - **Ctrl+Y**/**Cmd+Backspace**
@@ -74,11 +74,11 @@ Steps
 1. Move test `OrderServiceSpec` to `pizza-service/src/test/groovy/org/siemasoft/pizza/service/impl` module - **F6**    
 1. Make sure all files are added to git:
     * go to `Version Control` tab - **Alt+9**/**Cmd+9**
-    * review list, all should be under `Default` set,
-    * if you have any file under `Unversioned Files` set add them - **Ctrl+Alt+A**/**Cmd+Alt+A**
+    * review list, all files should be under `Default` changelist,
+    * if you have any file under `Unversioned Files` changelist add them - **Ctrl+Alt+A**/**Cmd+Alt+A**
     
     > You can group you changes in changelist.
-    It can be usefull when changed some files for local purpuses and do not want to commit them by mistake.
+    It can be usefull when you changed some files for local purpuses and do not want to commit them by mistake.
     In this tab you can create your own changelist and manage them.
     Commit changes popup let you select changelist to use in dropdown on the top
 1. Add `module-info.java` to `pizza-service/src/java`:
