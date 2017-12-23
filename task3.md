@@ -140,3 +140,5 @@ Steps
     * check available fixes, in this case constant is not used and can be removed 
 1. Run tests   
 1. Commit again this time choose option `Commit`
+
+*[Next task - refactoring  >>](task4.md)*
