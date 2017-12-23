@@ -2,5 +2,5 @@ package org.siemasoft.pizza.service.api;
 
 public interface OrderService {
 
-    void order(String clientId);
+    void order(OrderDto orderDto);
 }
