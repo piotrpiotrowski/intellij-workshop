@@ -1,5 +1,7 @@
 # Task4 - Refactoring
 
+> If you wan to start from this task, checkout solution for task3 by **Alt+` 7 task_3_java9_first_module**/**Ctrl+V 7 task_3_java9_first_module**
+
 1. Add `pizzaName` parameter to `OrderServiceImpl.order()`
     * open test - **Ctrl+N**/**Cmd+O** and type `OSIS`
     * go to first test case - **Ctrl+F12**/**Cmd+F12** and type `should`
