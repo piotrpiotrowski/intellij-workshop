@@ -49,7 +49,7 @@
       * new builder class has name `OrderDtoBuilder` lets find it in  navigation bar **Alt+HOME DOWN**/**Cmd+UP DOWN**
       * make it inner static class of `OrderDto` - **F6**
       * rename method `createOrderDto()` to `build()`
-      * extract `new OrderDtoBuilder()` to method `builder()` from method `create()` - **Ctrl+Alt+M**/**Cmd+Alt+M**
+      * extract `new OrderDtoBuilder()` to `public` method `builder()` from method `create()` - **Ctrl+Alt+M**/**Cmd+Alt+M**
       * inline static factory method - **Ctrl+Alt+N**/**Cmd+Alt+N**
       * Unfortunately it does not work well with groovy, so in this case copy builder usage
       * go to the test and paste it manually - **Ctrl+E**/**Ctrl+E**
