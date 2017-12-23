@@ -52,4 +52,4 @@
       * inline static factory method - **Ctrl+Alt+N**/**Cmd+Alt+N**
       * Unfortunately it does not work well with groovy, so in this case copy builder usage
       * go to the test and paste it manually - **Ctrl+E**/**Ctrl+E**
-   
+1. Run tests - **Ctrl+F10**/**Ctrl+R**  
