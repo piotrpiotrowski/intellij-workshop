@@ -37,4 +37,18 @@
       * open refactoring popup menu **Ctrl+Shift+Alt+T**/**Ctrl+T**
       * use refactor called `Replace Constructor with Factory Method` 
       * call it `create` an press **Ctrl+ENTER**
-      > This refactor makes constructor `private` and replace all its occurences with factory method
+      > This refactor makes constructor `private` and replace all its occurences with factory method.
+      Unfortunately it does not work well with groovy.
+      * go back to test and fix it manually - **Ctrl+Shift+T**/**Ctrl+Shift+T**
+   * second attemt is required because first one does not improve really things, so lets refactor to builder
+      * go to factory method definition - **Ctrl+B**/**Cmd+B**
+      * open refactoring popup menu **Ctrl+Shift+Alt+T**/**Ctrl+T** on `new OrderDto()`
+      * use refactor called `Replace Constructor with Builder`
+      * refactoring popup shows, here you can fill builder details like method names or use existing one
+      * lets go with defaults by pressing **Ctrl+ENTER**
+      * new builder class has name `OrderDtoBuilder` lets find it in  navigation bar **Alt+HOME DOWN**/**Cmd+UP DOWN**
+      * make it inner static class of `OrderDto` - **F6**
+      * rename method `createOrderDto()` to `build()`
+      * inline static factory method - **Ctrl+Alt+N**/**Cmd+Alt+N**
+      > Unfortunately it does not work well with groovy.
+      
