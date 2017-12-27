@@ -53,6 +53,15 @@ Steps
       * make it inner static class of `OrderDto` - **F6**
       * rename method `createOrderDto()` to `build()`
       * extract `new OrderDtoBuilder()` to `public` method `builder()` from method `create()` - **Ctrl+Alt+M**/**Cmd+Alt+M**
+      * move every next chained method call to separate line - press **Ctrl+Shift+Alt+J**/**Ctrl+G** on `.(` move one char left and press **ENTER**
+         ```java
+         OrderDto.builder()
+                 .clientId(clientId)
+                 .pizzaName(pizzaName)
+                 .size(size)
+                 .crustType(crustType)
+                 .build()
+        ```                             
       * inline static factory method - **Ctrl+Alt+N**/**Cmd+Alt+N**
       * Unfortunately it does not work well with groovy, so in this case copy builder usage
       * go to the test and paste it manually - **Ctrl+E**/**Ctrl+E**
