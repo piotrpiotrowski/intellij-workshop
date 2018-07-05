@@ -1,15 +1,15 @@
-## Task 3 - First module in Java 9 
+## Task 3 - First module in Java 10 
 
 > If you wan to start from this task, checkout solution for task2 by **Alt+` 7 task_2_debuging**/**Ctrl+V 7 task_2_debuging**
 
 Steps
 1. Java 9 is available so this is good moment to use it:
-   * install jdk9 on your machine
-   * configure jdk9 in project structure - **Ctrl+Alt+Shift+S**/**Cmd+;**
+   * install jdk10 on your machine
+   * configure jdk10 in project structure - **Ctrl+Alt+Shift+S**/**Cmd+;**
      * add it in `Project` tab
      * pick it in `Modules` tab
-   * set `sourceCompatibility = '9'` in `build.gradle` - **Ctrl+E**/**Cmd+E**
-   * add `targetCompatibility = '9'`
+   * set `sourceCompatibility = '10'` in `build.gradle` - **Ctrl+E**/**Cmd+E**
+   * add `targetCompatibility = '10'`
 1. Now we can create first module in project root directory:
     * go to `Project` panel - **Alt+1**/**Cmd+1**
     * move to root using UP arrow
