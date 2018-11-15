@@ -1,4 +1,4 @@
-## Task 2 - Debuging
+## Task 2 - Debugging
 
 We need to debug `OrderService.order()` to find out what is wrong with current implementation.
 > Debugging is not as fluent process as writing code so in some cases usage of mouse is more convinient.
@@ -32,4 +32,4 @@ We need to debug `OrderService.order()` to find out what is wrong with current i
 1. Once tests are passing we should commit the code - **Ctrl+K***/**Cmd+K**
     > *Commit popup* has many usefull checkboxes, such as *Reformat code*, *Optimize imports* and *Perform code analysis* make sure that they are checked 
     
-*[Next task - Java 9 Module  >>](task3.md)*
+*[Next task - Java 11 Module  >>](task3.md)*
