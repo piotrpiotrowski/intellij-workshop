@@ -8,8 +8,8 @@ Steps
    * configure jdk11 in project structure - **Ctrl+Alt+Shift+S**/**Cmd+;**
      * add it in `Project` tab
      * pick it in `Modules` tab
-   * set `sourceCompatibility = '9'` in `build.gradle` - **Ctrl+E**/**Cmd+E**
-   * add `targetCompatibility = '9'`
+   * set `sourceCompatibility = '11'` in `build.gradle` - **Ctrl+E**/**Cmd+E**
+   * add `targetCompatibility = '11'`
 1. Now we can create first module in project root directory:
     * go to `Project` panel - **Alt+1**/**Cmd+1**
     * move to root using UP arrow
