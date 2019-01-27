@@ -15,7 +15,7 @@ Steps
 1. Add `String size` parameter
 1. Add `String crustType` parameter
 1. Method having more then 2 params is not good programming practice, so let fix it:
-   * go to interface by pressing **Ctrl+B**/**Cmd+B**
+   * go to interface by pressing **Ctrl+B**/**Cmd+B** on the method name
    * extract parameter object - **Ctrl+Shift+Alt+T 6**/**Ctrl+T 6**
 1. Extract variable `order`:
    * select `new OrderDto(clientId, "hawajska", "small", "thin")` - press **Ctrl+W**/**Alt+UP** 3 times
@@ -26,9 +26,9 @@ Steps
    * add new line above variable - press **Ctrl+Alt+ENTER**/**Cmd+Alt+ENTER**
    * type `given:`
    * go back to variable and press **Ctrl+Shift+ENTER**/**Cmd+Shift+ENTER** 
-1. Extract variable from `def pizzaName = "hawajska"`
-1. Extract variable from `def size = "small"`
-1. Extract variable from `def crustType = "thin"`
+1. Extract variable from `def pizzaName = "hawajska"` **Ctrl+Alt+V**/**Cmd+Alt+V**
+1. Extract variable from `def size = "small"` **Ctrl+Alt+V**/**Cmd+Alt+V**
+1. Extract variable from `def crustType = "thin"` **Ctrl+Alt+V**/**Cmd+Alt+V**
 1. Replace `def` with `String`:
    * enable block selection mode - **Cmd+Shift+8**
    * select 3x3 cells and type `String`

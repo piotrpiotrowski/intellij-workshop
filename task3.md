@@ -53,7 +53,7 @@ Steps
     * open it by **Ctrl+Shift+N**/**Cmd+Shift+O**
     * start typing `pizza-` and press **Ctrl+SPACE**/**Cmd+SPACE**
     * type `/buil` and press **Ctrl+SPACE**/**Cmd+SPACE**
-    * remove unnecessary lines - **Ctrl+Y**/**Cmd+Backspace**
+    * remove unnecessary lines - **Ctrl+Y**/**Cmd+Backspace** and replace it by:
     ```groovy
     ext.moduleName = 'org.siemasoft.pizza.service'
     dependencies {
