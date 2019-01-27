@@ -48,7 +48,7 @@ We are going to implement pizza ordering service using Test Driven Development a
     * select second column - **Alt+UP** and type `caseDescription` and press **Esc**
     * adjust description in each row
 1. Run tests - go outside of test method and press **Ctrl+Shift+F10**/**Ctrl+Shift+R**
-1. Fix first combinator error by creating order() method:
+1. Fix first compilation error by creating order() method:
     * press **Alt+Enter** on ``order()`` method 
     * pick option *Create Method*
 1. Go to implementation and copy if block to ``order()`` method- **Ctrl+Shift+T**/**Cmd+Shift+T**
