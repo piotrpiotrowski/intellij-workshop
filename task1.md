@@ -48,7 +48,7 @@ We are going to implement pizza ordering service using Test Driven Development a
     * select second column - **Alt+UP** and type `caseDescription` and press **Esc**
     * adjust description in each row
 1. Run tests - go outside of test method and press **Ctrl+Shift+F10**/**Ctrl+Shift+R**
-1. Fix first compilator error by creating order() method:
+1. Fix first combinator error by creating order() method:
     * press **Alt+Enter** on ``order()`` method 
     * pick option *Create Method*
 1. Go to implementation and copy if block to ``order()`` method- **Ctrl+Shift+T**/**Cmd+Shift+T**
@@ -60,14 +60,14 @@ We are going to implement pizza ordering service using Test Driven Development a
 1. Create constant `EMPTY`:   
     * press **Alt+ENTER** 
     * pick option *Create constant field*
-    * assign value `new String("")` (it might be simplier but it is done by purpuse)
+    * assign value `new String("")` (it might be simpler but it is done by purpose)
 1. Extract `if` conditions to separate method called `isEmpty()`
     * select entire code in `if()`  - press **Ctrl+W**/**Alt+UP** three times
     * press **Ctrl+Alt+M**/**Cmd+Alt+M** and name method `isEmpty()`
 1. Implement throwing `llegalArgumentException`: 
     * start typing `thr` and press **TAB**
     * start typing `IllegalArgumen` and pick with code completation list once available
-    * press  **Ctrl+Shift+ENTER**/**Ctrl+Shift+ENTER** to complete the line with semocolon
+    * press  **Ctrl+Shift+ENTER**/**Ctrl+Shift+ENTER** to complete the line with semicolon
 1. Run tests again -  **Ctrl+F10**/**Ctrl+R** (Does it pass?)   
 
 *[Next task - debugging  >>](task2.md)*

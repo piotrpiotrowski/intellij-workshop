@@ -1,6 +1,6 @@
 ## Task 3 - First module in Java 11 
 
-> If you wan to start from this task, checkout solution for task2 by **Alt+` 7 task_2_debuging**/**Ctrl+V 7 task_2_debuging**
+> If you wan to start from this task, checkout solution for task2 by **Alt+` 7 task_2_debugging**/**Ctrl+V 7 task_2_debugging**
 
 Steps
 1. Java 11 is available so this is good moment to use it:
@@ -23,7 +23,7 @@ Steps
     * start typing `subprojects`
     * reformat file - **Ctrl+Alt+L**/**Cmd+Alt+L**
     * remove `group` - press in line **Ctrl+Y**/**Cmd+Backspace**
-    * replase `java` plugin with `java-library`
+    * replace `java` plugin with `java-library`
     * change `testCompile` to `testImplementation` - press **Ctrl+Shift+Alt+J**/**Ctrl+G** on the word and type `testImplementation`
     * add below code on the end of `subprojects` block:
     ```groovy
@@ -78,19 +78,19 @@ Steps
     * if you have any file under `Unversioned Files` changelist add them - **Ctrl+Alt+A**/**Cmd+Alt+A**
     
     > You can group you changes in changelist.
-    It can be usefull when you changed some files for local purpuses and do not want to commit them by mistake.
+    It can be useful when you changed some files for local purposes and do not want to commit them by mistake.
     In this tab you can create your own changelist and manage them.
     Commit changes popup let you select changelist to use in dropdown on the top
 1. Add `module-info.java` to `pizza-service/`:
     * use navigation bar to select folder `pizza-service/src/java/org.siemasoft.pizza.service` -  **Alt+HOME**/**Cmd+UP**
     * create file `module-info.java` by pressing **Alt+Insert**/**Cmd+N**
     * find it on the list by typing `module` and press **ENTER**
-    * fill placeholder inside by module nane `org.siemasoft.pizza.service`
-1. Idea behind the modules is to improve encapsulation, so we shoudl expose behavior of `OderService` by interface:
+    * fill placeholder inside by module name `org.siemasoft.pizza.service`
+1. Idea behind the modules is to improve encapsulation, so we should expose behavior of `OderService` by interface:
     * go to `OrderServce` - **Ctrl+N**/**Cmd+O**
     * rename it to `OrderServceImpl` - **Shift+F6**
     * go to order method by pressing **Ctrl+F12**/**Cmd+F12** and typing `ord`
-    * extrat interface **Ctrl+Shift+Alt 0**/**Ctrl+T 0**
+    * extract interface **Ctrl+Shift+Alt 0**/**Ctrl+T 0**
     * name it `OrderService`
 1. Move interface to new package *api*:
     * select `OrderService` - **Alt+HOME**/**Cmd+UP** and start typing `Ord`
